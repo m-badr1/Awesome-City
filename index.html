@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome City</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+</head>
+<body>
+    <section id="Header">
+        <nav>
+            <div class="center">
+                <div class="tag">
+                    <i class="fa-solid fa-recycle"></i>
+                    <div>
+                        <h1>
+                            Directone
+                        </h1>
+                        <span>
+                            DIRECTORY AND LISTING
+                        </span>
+                    </div>
+                </div>
+                <div class="nav-Link">
+                    <ul>
+                        <li id="nav1" onclick="liClick()">Home    </li>
+                        <li id="nav2" onclick="liClick()">ABOUT   </li>
+                        <li id="nav3" onclick="liClick()">LISTING </li>
+                        <li id="nav4" onclick="liClick()">BLOG    </li>
+                        <li id="nav5" onclick="liClick()">CONTACT </li>
+                    </ul>
+                </div>
+                <div class="button2">
+                    <button type="submit" class="btn" onclick="openPopup()">Thank You!</button>
+                    <div class="popup" id="popup">
+                        <img src="./img/404-tick.png" alt="">
+                        <h2>Thank You!</h2>
+                        <p>Ypur Details has been successfully submitted. Thanks!</p>
+                        <button type="button" onclick="closePopup()">Ok</button>
+                    </div>
+                </div>
+                <div class="bb">
+                    <div class="click" onclick="click1()">
+                        <div class="span1"></div>
+                        <div class="span2"></div>
+                        <div class="span3"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="text">
+            <h1></h1>
+            <p>Find great places to stay, eat, shop, or visit from local experts.</p>
+        </div>
+
+        <div id="form">
+            <form action="">
+                <input  type="search" class="cars" placeholder="Search"/>
+                <input  type="text"   class="cars" class="text"  checked placeholder="Search Location" />
+                <div class="sub" onclick="onclickhover()">
+                    <h3>
+                        <i class="fa-solid fa-book-open"></i>
+                        All Categories
+                        <i class="fa-solid fa-angle-down"></i>
+                    </h3>
+                    <div class="links" >
+                        <ul>
+                            <li>All Categories  </li>
+                            <li>Hotel           </li>
+                            <li>Shopping        </li>
+                            <li>Beauty          </li>
+                            <li>Fitness         </li>
+                            <li>Bar & Club      </li>
+                            <li>Games           </li>
+                            <li>Places          </li>
+                            <li>Circus          </li>
+                            <li>Theater         </li>
+                            <li>Sports          </li>
+                            <li>Health          </li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="button" onclick="button()"> Search</button>
+            </form>
+        </div>
+    </section>
+    <!-- ftco-section ////////////////////////////////////////// -->
+    <section id="ftco-section">
+        <div class="center">
+
+            <div class="card slide-top " >
+                <div class="icon">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Food & Drink
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>103</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top " id="card">
+                <div class="icon">
+                    <i class="fa-solid fa-hotel"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Hotels
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>40</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top ">
+                <div class="icon">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Shopping
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>100</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top ">
+                <div class="icon">
+                    <i class="fa-brands fa-slack"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Beauty
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>36</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top">
+                <div class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Fitness
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>30</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top">
+                <div class="icon">
+                    <i class="fa-solid fa-soap"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Bar & Club
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>12</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top">
+                <div class="icon">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Games
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>103</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top" >
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Places
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>40</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top">
+                <div class="icon">
+                    <i class="fa-solid fa-house-crack"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Circus
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>100</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top">
+                <div class="icon">
+                    <i class="fa-solid fa-masks-theater"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Theater
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>36</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top">
+                <div class="icon">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Sports
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>30</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+
+            <div class="card slide-top">
+                <div class="icon">
+                    <i class="fa-solid fa-cannabis"></i>
+                </div>
+                <div class="text">
+                    <h2>
+                        Health
+                    </h2>
+                </div>
+                <div class="list">
+                    <span>12</span>
+                    <p>Listings</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- OUR LISTING ////////////////////////////////////////// -->
+    <section id="our-listing"  class="img-filter">
+        <div class="center">
+            <div class="title ">
+                <h4>OUR LISTING</h4>
+                <h2>Popular Listing</h2>
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-1.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>FOOD & DRINKS</span>
+                        <h3>Japanese Restaurant</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-2.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-hotel"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>HOTEL</span>
+                        <h3>Harbor Lights Hotel</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-3.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>SHOPPING</span>
+                        <h3>MS Center Mall of Asia</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-4.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>GYM FITNESS</span>
+                        <h3>Maxout Fitness Gym</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- break //////////////////////////////////////////////// -->
+    <section id="break">
+        <div class="center">
+            <div class="img" >
+                <img src="img/intro.jpg.webp" alt="" id="imgClick">
+
+            </div>
+            <div class="prag">
+                <span>
+                    SPECIAL OFFERS
+                </span>
+                <p>We Have Special Offers Every Now and Then</p>
+            </div>
+            <div class="input" >
+                <label for="inputClick">Upload Image</label>
+                <input type="file" id="inputClick">
+                <!-- <button id="buttonClick">SHOW SPECAL OFFERS</button> -->
+            </div>
+        </div>
+    </section>
+    <!-- OUR LISTING ////////////////////////////////////////// -->
+    <section id="our-listing" class="img-filter" >
+        <div class="center">
+            <div class="title ">
+                <h4>LISTING</h4>
+                <h2>Our Listing</h2>
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-5.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-qrcode"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>BEAUTY</span>
+                        <h3>Japanese Restaurant</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-6.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-hotel"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>BAR & CLUB</span>
+                        <h3>Harbor Lights Hotel</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-7.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>CIRCUS</span>
+                        <h3>MS Center Mall of Asia</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-8.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-masks-theater"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>THEATER</span>
+                        <h3>Maxout Fitness Gym</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-9.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>THEATER</span>
+                        <h3>Japanese Restaurant</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-10.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-person-skiing"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>SPORTS</span>
+                        <h3>Harbor Lights Hotel</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-11.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-brands fa-fantasy-flight-games"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>GAMES</span>
+                        <h3>MS Center Mall of Asia</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <img src="img/list-12.jpg.webp" alt="">
+                    </div>
+                    <div class="fontAs">
+                        <div class="div">
+                            <i class="fa-solid fa-map-pin"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span>PLACES</span>
+                        <h3>Maxout Fitness Gym</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>Suite 721 New York NY 10016</p>
+                        <i><i class="fa-solid fa-phone"></i> +00 123 456 7890</i>
+                    </div>
+                    <div class="footer-Review">
+                        <span>Review 5.0/5 <i class="fa-regular fa-star"></i> (100)</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- break 2 ////////////////////////////////////////// -->
+    <section id="break-2">
+        <div class="center">
+            <div class="img">
+                <img src="img/about.jpg.webp" alt="">
+            </div>
+            <div class="text">
+                <div class="prag">
+                    <span>WELCOME TO DIRECTONE</span>
+                    <h2>Directone A Directory & Listing</h2>
+                    <p>
+                        Far far away, behind the word mountains, far from the countries Vokalia and 
+                        Consonantia, there live the blind texts. Separated they live in
+                        Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    </p>
+                    <p>
+                        A small river named Duden flows by their place and supplies it 
+                        with the necessary regelialia. It is a paradisematic country, 
+                        in which roasted parts of sentences fly into your mouth.
+                    </p>
+                </div>
+
+                <div class="cards">
+                    <div class="user">
+                        <i class="fa fa-user"></i>
+                        <h4 data-goal="50" class="bad">0</h4>
+                        <p>Happy Clients</p>
+                    </div>
+            
+                    <div class="user">
+                        <i class="fa fa-trophy"></i>
+                        <h4 data-goal="210" class="bad">0</h4>
+                        <p>Award Winning</p>
+                    </div>
+            
+                    <div class="user">
+                        <i class="fa fa-solid fa-gift"></i>
+                        <h4 data-goal="450" class="bad">0</h4>
+                        <p>Completed Projects</p>
+                    </div>
+            
+                    <div class="user">
+                        <i class="fa fa-coffee"></i>
+                        <h4 data-goal="100" class="bad">0</h4>
+                        <p>Cup Of Coffees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- people  /////////////////////////////////////////// -->
+    <section id="people" class="imgfilter">
+        <div class="scroll" style="--time:50s">
+            <div class="cards">
+                <div class="card">
+                    <p>
+                        Far far away, behind the word mountains,  far from the countries 
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <div class="name-peop">
+                        <div class="img">
+                            <img src="img/list-6.jpg.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Roger Scott</h2>
+                            <span>MARKETING MANAGER</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                        <p>
+                            Far far away, behind the word mountains, far from the countries 
+                            Vokalia and Consonantia, there live the blind texts.
+                        </p>
+                    <div class="name-peop">
+                        <div class="img">
+                            <img src="img/list-5.jpg.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Roger Scott</h2>
+                            <span>MARKETING MANAGER</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <p>
+                        Far far away, behind the word mountains, far from the countries 
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <div class="name-peop">
+                        <div class="img">
+                            <img src="img/list-1.jpg.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Roger Scott</h2>
+                            <span>MARKETING MANAGER</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <p>
+                        Far far away, behind the word mountains, far from the countries 
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <div class="name-peop">
+                        <div class="img">
+                            <img src="img/list-6.jpg.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Roger Scott</h2>
+                            <span>MARKETING MANAGER</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                        <p>
+                            Far far away, behind the word mountains, far from the countries 
+                            Vokalia and Consonantia, there live the blind texts.
+                        </p>
+                    <div class="name-peop">
+                        <div class="img">
+                            <img src="img/list-5.jpg.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Roger Scott</h2>
+                            <span>MARKETING MANAGER</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <p>
+                        Far far away, behind the word mountains,  far from the countries 
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <div class="name-peop">
+                        <div class="img">
+                            <img src="img/list-1.jpg.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Roger Scott</h2>
+                            <span>MARKETING MANAGER</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="center">
+
+            <div class="cards" style="--time: 40s">
+                <div>
+                    
+                    <div class="card">
+                        <div class="p">
+                            <p>
+                                Far far away, behind the word mountains, far from the countries 
+                                Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                        </div>
+                        <div class="name-peop">
+                            <div class="img">
+                                <img src="img/list-6.jpg.webp" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Roger Scott</h2>
+                                <span>MARKETING MANAGER</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="p">
+                            <p>
+                                Far far away, behind the word mountains, far from the countries 
+                                Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                        </div>
+                        <div class="name-peop">
+                            <div class="img">
+                                <img src="img/list-5.jpg.webp" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Roger Scott</h2>
+                                <span>MARKETING MANAGER</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="p">
+                            <p>
+                                Far far away, behind the word mountains, far from the countries 
+                                Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                        </div>
+                        <div class="name-peop">
+                            <div class="img">
+                                <img src="img/list-1.jpg.webp" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Roger Scott</h2>
+                                <span>MARKETING MANAGER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="card">
+                        <div class="p">
+                            <p>
+                                Far far away, behind the word mountains, far from the countries 
+                                Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                        </div>
+                        <div class="name-peop">
+                            <div class="img">
+                                <img src="img/list-6.jpg.webp" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Roger Scott</h2>
+                                <span>MARKETING MANAGER</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="p">
+                            <p>
+                                Far far away, behind the word mountains, far from the countries 
+                                Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                        </div>
+                        <div class="name-peop">
+                            <div class="img">
+                                <img src="img/list-5.jpg.webp" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Roger Scott</h2>
+                                <span>MARKETING MANAGER</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="p">
+                            <p>
+                                Far far away, behind the word mountains, far from the countries 
+                                Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                        </div>
+                        <div class="name-peop">
+                            <div class="img">
+                                <img src="img/list-1.jpg.webp" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Roger Scott</h2>
+                                <span>MARKETING MANAGER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dot">
+                <div class="span span1"></div>
+                <div class="span"></div>
+            </div>
+        </div> -->
+
+    </section>
+    <footer>
+        <div class="center">
+            <div class="tag">
+                <div class="box-top">
+                    <h2>Directone</h2>
+                    <span>DIRECTORY AND LISTING</span>
+                </div>
+                <div class="box-center">
+                    <p>
+                        A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                </div>
+                <div class="box-bottom" >
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="Explore div">
+                <ul>
+                    <li class="head">Explore</li>
+                    <li><i class="fa-solid fa-angles-right"></i> About Us</li>
+                    <li><i class="fa-solid fa-angles-right"></i> Account</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Listing</li>
+                    <li><i class="fa-solid fa-angles-right"></i> Pricing Packages</li>
+                    <li><i class="fa-solid fa-angles-right"></i> Pricing Packages</li>
+                </ul>
+            </div>
+            <div class="Quick div">
+                <ul>
+                    <li class="head">Quick Links</li>
+                    <li><i class="fa-solid fa-angles-right"></i> Contact Us</li>
+                    <li><i class="fa-solid fa-angles-right"></i> Terms & Conditions</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Privacy</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Feedbacks</li>
+                </ul>
+            </div>
+            <div class="Categories div">
+                <ul>
+                    <li class="head">Categories</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Food & Drinks  </li>
+                    <li><i class="fa-solid fa-angles-right"></i>Hotels</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Shopping</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Beauty</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Fitness</li>
+                    <li><i class="fa-solid fa-angles-right"></i>Ber & Club</li>
+                </ul>
+            </div>
+            <div class="have div">
+                <ul>
+                    <li class="head">Have a Questions ?</li>
+                    <li><i class="fa-solid fa-city"></i> 203 Fake St. Mountain View, San Francisco, California, USA</li>
+                    <li><i class="fa-solid fa-phone"></i> +2 392 3929 210</li>
+                    <li><i class="fa-solid fa-paper-plane"></i> info@yourdomain.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
